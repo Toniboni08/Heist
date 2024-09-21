@@ -9,7 +9,8 @@
     <canvas id="canvas" style="position: absolute; left: 0px; top: 0px;"></canvas>
     <script>
         fetch("http://localhost:8000/ilike").then((event) => {
-            JSON.parse(event.json());
+            console.log(event.json());
+            console.log(JSON.parse(event.json()).name);
         })
 
     </script>
