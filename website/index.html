@@ -8,7 +8,7 @@
 <body style="background-color: #1b1b1b;">
     <canvas id="canvas" style="position: absolute; left: 0px; top: 0px;"></canvas>
     <script>
-        fetch("http://localhost:8000/ilike").then((event) => {
+        fetch("http://localhost:8000/ilike", {headers: JSON.stringify({token: "1234"})}).then((event) => {
             event.json()
             .then((data) => {
                 console.log(data.name);
