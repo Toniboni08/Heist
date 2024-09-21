@@ -10,7 +10,10 @@
     <script>
         fetch("http://localhost:8000/ilike").then((event) => {
             console.log("1");
-            console.log(event.text());
+            event.text()
+            .then((event) => {
+                console.log(event);
+            })
         })
 
     </script>
