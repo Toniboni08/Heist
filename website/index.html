@@ -11,7 +11,7 @@
         fetch("http://localhost:8000/ilike").then((event) => {
             event.json()
             .then((data) => {
-                console.log(data);
+                console.log(data.name);
             })
         })
 
