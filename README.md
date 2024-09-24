@@ -8,3 +8,4 @@ Ideen:
       - Gesichtserkennung
       - Fingerabdruck
       - Stimmerkennung
+      - Dna
