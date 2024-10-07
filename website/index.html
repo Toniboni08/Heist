@@ -5,16 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test123</title>
 </head>
-<body style="background-color: #1b1b1b;">
-    <canvas id="canvas" style="position: absolute; left: 0px; top: 0px;"></canvas>
-    <script>
-        fetch("http://localhost:8000/ilike", {headers: JSON.stringify({token: "1234"})}).then((event) => {
-            event.json()
-            .then((data) => {
-                console.log(data.name);
-            })
-        })
-
-    </script>
-</body>
+<body style="background-color: #1b1b1b;"></body>
+    <button id="connect" style="display: none;">connect</button>
+    <canvas></canvas>
+    <script src="https://unpkg.com/peerjs@1.5.4/dist/peerjs.min.js"></script>
+    <script src="graphicsHandler.js"></script>
+    <script src="websocketHandler.js"></script>
+    <script src="peerHandler.js"></script>
+    <script src="script.js"></script>
 </html>

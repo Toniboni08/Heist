@@ -1,0 +1,34 @@
+body{
+    background-color: #1a1a1a;
+}
+
+#connect {
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-100px, -100px);
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    background-color: rgba(255, 0, 0, 0);
+    transition: all 200ms;
+}
+
+#connect:hover {
+    width: 220px;
+    height: 220px;
+    border-radius: 110px;
+    transform: translate(-110px, -110px);
+}
+
+#connect-shadow{
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-200px, -200px);
+    width: 400px;
+    height: 400px;
+    background-image: radial-gradient(closest-side ,rgb(196, 0, 0), rgba(196, 0, 0, 0));
+}
